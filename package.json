@@ -1,6 +1,6 @@
 {
   "name": "hn-headless",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Read latest hacker news articles completely from your terminal",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "hnh": "./index.js"
   },
   "author": "rcorrie <rcorrie90@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rcorrie/hn-headless/issues"
   },

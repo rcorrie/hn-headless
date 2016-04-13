@@ -25,4 +25,4 @@ $ hnh
 ```
 
 ## license
-ISC © [ricardo corrie](http://rcorrie.com)
+MIT © [ricardo corrie](http://rcorrie.com)
