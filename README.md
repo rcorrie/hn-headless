@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/hn-headless.svg)](https://badge.fury.io/js/hn-headless)
+
 #hacker news headless
 Browse the latest [hacker news](https://news.ycombinator.com) articles without
 ever leaving your terminal.
@@ -23,4 +25,4 @@ $ hnh
 ```
 
 ## license
-MIT © [ricardo corrie](http://rcorrie.com)
+ISC © [ricardo corrie](http://rcorrie.com)
