@@ -1,6 +1,6 @@
 {
   "name": "hn-headless",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Read latest hacker news articles completely from your terminal",
   "main": "index.js",
   "scripts": {
