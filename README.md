@@ -13,9 +13,11 @@ $ npm install -g hn-headless
 
 *note:* you must have [w3m](http://w3m.sourceforge.net/) installed.
 ```sh
+# with aptitude
 $ sudo apt-get install w3m
 ```
 ```sh
+# with homebrew
 $ brew install w3m
 ```
 
