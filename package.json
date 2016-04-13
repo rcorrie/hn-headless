@@ -1,0 +1,29 @@
+{
+  "name": "hn-headless",
+  "version": "1.0.0",
+  "description": "Read latest hacker news articles completely from your terminal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcorrie/hn-headless.git"
+  },
+  "bin": {
+    "hnh": "./index.js"
+  },
+  "author": "rcorrie <rcorrie90@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcorrie/hn-headless/issues"
+  },
+  "homepage": "https://github.com/rcorrie/hn-headless#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "feedparser": "^1.1.4",
+    "pad-left": "^2.0.3",
+    "prompt": "^1.0.0",
+    "request": "^2.71.0"
+  }
+}
