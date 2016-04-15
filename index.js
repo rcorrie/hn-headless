@@ -5,6 +5,7 @@ var FeedParser  = require('feedparser'),
     prompt      = require('prompt'),
     spawn       = require('child_process').spawn,
     exec        = require('child_process').exec,
+    fs          = require('fs'),
     pad         = require('pad-left'),
     colors      = require('colors'),
     articles    = [];
@@ -16,6 +17,13 @@ const RSS_URL   = 'https://news.ycombinator.com/rss',
       PROMPT_MSG = 'Enter an article index to view',
       ARTICLE_NOT_FOUND_ERR = 'Article not found, make sure you enter an index number from the left.',
       MISSING_W3M_ERR = 'Could not open uri. Please make sure you have installed "w3m", run:';
+
+
+if( ['-v', '--version'].indexOf(process.argv[1]) > -1 ) {
+    var obj = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+    console.log(obj.version)
+    return;
+}
 
 console.log(STARTUP_MSG.blue.bold)
 request(RSS_URL)
