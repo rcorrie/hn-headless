@@ -27,4 +27,6 @@ $ hnh
 ```
 
 ## license
-MIT © [ricardo corrie](http://rcorrie.com)
+MIT 
+
+[ricardo corrie](http://rcorrie.com)
