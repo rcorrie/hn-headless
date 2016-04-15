@@ -17,11 +17,17 @@ const RSS_URL   = 'https://news.ycombinator.com/rss',
       PROMPT_MSG = 'Enter an article index to view',
       ARTICLE_NOT_FOUND_ERR = 'Article not found, make sure you enter an index number from the left.',
       MISSING_W3M_ERR = 'Could not open uri. Please make sure you have installed "w3m", run:';
+      HELP_MSG = 'Usage: hnh [OPTIONS]\n\n  Browse the latest hacker news articles without ever leaving your terminal\n\nOptions:\n  -v --version\t\tDisplay current software version\n  -h --help\t\tDisplay help and useage details';
 
 
 if( ['-v', '--version'].indexOf(process.argv[1]) > -1 ) {
     var obj = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-    console.log(obj.version)
+    console.log(obj.version);
+    return;
+}
+
+if( ['-h', '--help'].indexOf(process.argv[2]) > -1 ) {
+    console.log(HELP_MSG);
     return;
 }
 
