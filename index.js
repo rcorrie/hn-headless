@@ -20,7 +20,7 @@ const RSS_URL   = 'https://news.ycombinator.com/rss',
       HELP_MSG = 'Usage: hnh [OPTIONS]\n\n  Browse the latest hacker news articles without ever leaving your terminal\n\nOptions:\n  -v --version\t\tDisplay current software version\n  -h --help\t\tDisplay help and useage details';
 
 
-if( ['-v', '--version'].indexOf(process.argv[1]) > -1 ) {
+if( ['-v', '--version'].indexOf(process.argv[2]) > -1 ) {
     var obj = JSON.parse(fs.readFileSync('package.json', 'utf8'));
     console.log(obj.version);
     return;
